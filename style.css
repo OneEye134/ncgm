@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    color: white;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
@@ -11,6 +12,24 @@ header {
     background-color: black;
     border: 5px solid white;
     padding: 2vw;
+}
+
+.mangacard {
+    width: 30%;
+    height: auto;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem; 
+    padding: 2vw;
+}
+
+.mangacard > button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(120, 120, 255);
 }
 
 header ul {
@@ -29,32 +48,53 @@ header ul {
 
 .logo-container h2,
 .logo-container p {
-    margin: 0; /* remove default margin */
+    margin: 0;
 }
 
 .logo {
     font-family: 'Noto Serif';
-    color:rgb(92, 92, 180)
+    color: rgb(92, 92, 180);
 }
 
-h2 {
-    color: white;
+.big {
     font-size: 8vw;
     margin: 0;
 }
 
 li {
-    color:white
+    color: white;
 }
 
 @media (min-width: 1200px) {
-    h2 {
+    .big {
         font-size: 6rem;
     }
 }
 
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .mangacard {
+        width: 90%;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem auto;
+        padding: 1rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
 @media (max-width: 400px) {
-    h2 {
+    .big {
         font-size: 10vw;
     }
 }
