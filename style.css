@@ -21,6 +21,12 @@ header ul {
     gap: 1rem; 
 }
 
+
+.logo {
+    font-family: 'Noto Serif';
+    color:rgb(92, 92, 180)
+}
+
 h2 {
     color: white;
     font-size: 8vw;
