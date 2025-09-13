@@ -13,6 +13,7 @@ header {
     border-top: none;
     padding: 2vw;
     border-radius: 10px;
+    box-shadow: 0px 0px 50px rgb(61, 94, 104);
 }
 
 .mangacard {
@@ -26,6 +27,13 @@ header {
     gap: 1rem; 
     padding: 2vw;
     border-radius: 10px;
+    box-shadow: 0px 0px 16px lightblue;
+    transition: box-shadow 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.mangacard:hover {
+    box-shadow: 0px 0px 25px lightblue;
 }
 
 .mangacard > button {
