@@ -42,9 +42,9 @@ footer {
     transition-timing-function: ease-in-out; */
 }
 
-.mangacard:hover {
+/*.mangacard:hover {
     box-shadow: 0px 0px 25px lightblue;
-}
+}*/
 
 .mangacard > button {
     padding: 15px 20px;
