@@ -18,25 +18,25 @@ header {
 
 main {
     flex: 1;
-    display: flex;             /* make main a flex container */
-    flex-direction: column;    /* stack children vertically */
-    align-items: center;       /* center horizontally */
-    justify-content: center;   /* center vertically */
-    text-align: center;        /* ensure text is centered */
-    gap: 1rem;                 /* spacing between elements */
-    padding: 2rem;             /* optional padding */
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* center horizontally */
+    gap: 1rem;              /* space between title and select */
+    padding: 2rem;
 }
 
 #chapter-select {
-    width: 80%;           /* make it wider on mobile */
-    max-width: 400px;     /* cap width on desktop */
-    font-size: 18px;      
+    width: 80%;           /* responsive width */
+    max-width: 400px;     /* caps width on desktop */
+    font-size: 18px;
     padding: 10px;
     border-radius: 10px;
     background-color: black;
     color: white;
     border: 2px solid white;
+    display: block;       /* ensures centering with margin auto if needed */
 }
+
 
 footer {
     text-align: center;
