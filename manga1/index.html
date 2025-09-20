@@ -21,9 +21,12 @@
         </ul>
     </header>
     <main>
-        <div style="justify-content: center; display: flex;">
-            <div class="mangacard"><h2>Title PLS</h2><button onclick="window.location.href='/manga1'">Read</button></div>
-        </div>    
+        <h6 class="big mid">TITLE PLS</h2>
+        <select id="chapter-select" onchange="loadChapter() " class="mid" style="background-color: black; color: white; font-size: 18px; padding: 8px; border-radius: 10px;">
+            <option value="" >Choose a chapter</option>
+            <optgroup label="Season 1">
+            <option value="1">Chapter 1</option>
+        </select>
     </main>
 
     <footer>

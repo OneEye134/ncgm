@@ -1,0 +1,129 @@
+body {
+    background-color: rgb(4, 4, 4);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border: 5px solid rgb(32, 32, 32);
+    border-top: none;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 50px rgb(61, 94, 104);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: rgba(255, 255, 255, 0.407);
+}
+
+.mangacard {
+    width: 30%;
+    height: auto;
+    border: 5px solid rgb(32, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    gap: 1rem; 
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px lightblue;
+    /*transition: box-shadow 0.1s;
+    transition-timing-function: ease-in-out; */
+}
+
+/*.mangacard:hover {
+    box-shadow: 0px 0px 25px lightblue;
+}*/
+
+.mangacard > button {
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(120, 120, 255);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1rem; 
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container h2,
+.logo-container p {
+    margin: 0;
+}
+
+.logo {
+    font-family: 'Noto Serif';
+    color: rgb(92, 92, 180);
+}
+
+.big {
+    font-size: 8vw;
+    margin: 0;
+}
+
+.mid {
+    text-align: center;
+    display: block;       /* Makes input act like a block element */
+    margin: 0 auto;       /* Auto left and right margins center it */
+}
+
+li {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .big {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .mangacard {
+        width: 90%;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .big {
+        font-size: 10vw;
+    }
+}
